@@ -9,7 +9,8 @@
 #' @export
 #' @description this function can be used to detect the type of plastic a given plastic should be characterized as based on the materials C, H, O, and Cl content. Various combinations of elemental content can result in a plastic type of PETE, PS, PP, PE, PVC, or other.
 #'
-#' @examples
+#' @examples detect_plastic(10,8,4,0) returns: [1] "PETE"
+
 detect_plastic <- function(C, H, O, Cl) {
 
   # error checking
