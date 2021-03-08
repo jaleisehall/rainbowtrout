@@ -2,16 +2,21 @@
 % Please edit documentation in R/fall_severity.R
 \name{fall_severity}
 \alias{fall_severity}
-\title{Title}
+\title{fall_severity}
 \usage{
 fall_severity(fall_length, rope_length)
 }
 \arguments{
-\item{rope_length}{}
+\item{fall_length}{Length of fall in meters or feet. Must match units of rope_length}
+
+\item{rope_length}{Total length of rope in meters or feet. Must match units of fall_length}
 }
 \value{
-
+fall severity based on fall factor
 }
 \description{
-Title
+Takes inputs fall_length and rope_length to calculate fall factor severity of a climb.
+}
+\examples{
+fall_severity(fall_length = 10, rope_length = 50) returns: [1] "minor"
 }

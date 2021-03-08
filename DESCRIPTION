@@ -1,11 +1,10 @@
 Package: rainbowtrout
 Type: Package
-Title: What the Package Does (Title Case)
+Title: What Rainbowtrout Package Does
 Version: 0.1.0
-Author: Who wrote it
+Author: Bri Baker, Jaleise Hall, Evan Herberlein
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: An eclectic collection of functions written for ESM 262
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
