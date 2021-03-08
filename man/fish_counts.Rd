@@ -2,16 +2,24 @@
 % Please edit documentation in R/fish_counts.R
 \name{fish_counts}
 \alias{fish_counts}
-\title{Title}
+\title{fish_counts function}
 \usage{
 fish_counts(fish, plot = FALSE)
 }
 \arguments{
-\item{plot}{}
+\item{fish}{(list)}
+
+\item{plot}{(default = FALSE)}
 }
 \value{
-
+most common fish, rarest fish, total number of fish, plot (optional)
 }
 \description{
-Title
+Returns the most common fish + count, the rarest fish, the total number of fish, and plot if plot = TRUE. 
+Takes vector input of fish species list (or really any list of occurrences)
+}
+\examples{
+> fish_counts(all_fish, plot = FALSE)
+salmon   tuna        
+2      5    300 
 }
