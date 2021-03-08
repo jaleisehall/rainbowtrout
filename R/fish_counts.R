@@ -1,18 +1,17 @@
-## fish counts
-## Returns the most common fish, the rarest fish, the total number of fish
-## returns plot when requested
-## takes vector input of fish species list (or really any list of occurrences)
-library(tidyverse)
-
-#' Title
+#' @title fish_counts function
 #'
-#' @param fish
-#' @param plot
+#' @param fish (list)
+#' @param plot (default = FALSE)
 #'
-#' @return
+#' @return most common fish, rarest fish, total number of fish, plot (optional)
 #' @export
+#' @description Returns the most common fish + count, the rarest fish, the total number of fish, and plot if plot = TRUE. 
+#' Takes vector input of fish species list (or really any list of occurrences)
 #'
-#' @examples
+#' @examples > fish_counts(all_fish, plot = FALSE)
+#' salmon   tuna        
+#' 2      5    300 
+
 fish_counts <- function(fish, plot = FALSE){
 
   # error check, ensure that plot input is logical

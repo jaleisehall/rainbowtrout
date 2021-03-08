@@ -4,10 +4,10 @@
 #' @param elevation 
 #'
 #' @return year
-#' @export
+#' @export 
 #' @description Calculates time required for inundation given rate of sea level rise. 
 #' Sea level rise time function (while loop ESM262 HW3). 
-#' Calculates year that a city will be inundated given a 3.6mm annual slr rate (2021). 
+#' Returns year that a city will be inundated given a 3.6mm annual sea level rise (slr) rate (2021 global average). 
 #' Takes starting local mean sea level (m) and city elevation (m) as inputs.
 #'
 #' @examples slr_fun(sea_level = 1.1, elevation = 4.1)
