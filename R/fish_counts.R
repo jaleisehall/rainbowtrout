@@ -10,7 +10,7 @@
 #'
 #' @examples > fish_counts(all_fish, plot = FALSE)
 #' salmon   tuna        
-#' 2      5    300 
+#' 2        5     300 
 
 fish_counts <- function(fish, plot = FALSE){
 

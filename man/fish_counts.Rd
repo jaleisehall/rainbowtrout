@@ -21,5 +21,5 @@ Takes vector input of fish species list (or really any list of occurrences)
 \examples{
 > fish_counts(all_fish, plot = FALSE)
 salmon   tuna        
-2      5    300 
+2        5     300 
 }
