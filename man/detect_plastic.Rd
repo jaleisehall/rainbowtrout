@@ -2,16 +2,25 @@
 % Please edit documentation in R/detect_plastic.R
 \name{detect_plastic}
 \alias{detect_plastic}
-\title{Title}
+\title{detect_plastic function}
 \usage{
 detect_plastic(C, H, O, Cl)
 }
 \arguments{
-\item{Cl}{}
+\item{C}{- Carbon atoms present in the material}
+
+\item{H}{- Hydrogen atoms present in the material}
+
+\item{O}{- Oxygen atoms present in the material}
+
+\item{Cl}{- Chlorine atoms present in the material}
 }
 \value{
-
+plastic type
 }
 \description{
-Title
+this function can be used to detect the type of plastic a given plastic should be characterized as based on the materials C, H, O, and Cl content. Various combinations of elemental content can result in a plastic type of PETE, PS, PP, PE, PVC, or other.
+}
+\examples{
+detect_plastic(10,8,4,0) returns: [1] "PETE"
 }

@@ -1,20 +1,17 @@
-## case when assignment 3
-## determines fall factor severity for a climb based on fall factor
-## takes inputs to calculate fall factor
-## lengths can be any unit, so long as same
-
-library(tidyverse)
-
-
-#' Title
+#' @title fall_severity
 #'
-#' @param fall_length
-#' @param rope_length
+#' @param fall_length Length of fall in meters or feet. Must match units of rope_length
+#' @param rope_length Total length of rope in meters or feet. Must match units of fall_length
 #'
-#' @return
+#' @return fall severity based on fall factor
 #' @export
 #'
-#' @examples
+#' @description Takes inputs fall_length and rope_length to calculate fall factor severity of a climb.
+#'
+#' @examples fall_severity(fall_length = 10, rope_length = 50) returns: [1] "minor"
+
+
+
 fall_severity <- function (fall_length, rope_length){
 
   #  Error checking to ensure variables greater than 0

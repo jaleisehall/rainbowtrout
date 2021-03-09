@@ -1,18 +1,16 @@
-# CASE_WHEN: for multiple conditions
-
-# Contract: Classifies plastic types as PETE, PE, PVC, PP, PS, and OTHER based on the chemical composition of a sample of the plastic in question.
-
-#' Title
+#' @title detect_plastic function
 #'
-#' @param C
-#' @param H
-#' @param O
-#' @param Cl
+#' @param C - Carbon atoms present in the material
+#' @param H - Hydrogen atoms present in the material
+#' @param O - Oxygen atoms present in the material
+#' @param Cl - Chlorine atoms present in the material
 #'
-#' @return
+#' @return plastic type
 #' @export
+#' @description this function can be used to detect the type of plastic a given plastic should be characterized as based on the materials C, H, O, and Cl content. Various combinations of elemental content can result in a plastic type of PETE, PS, PP, PE, PVC, or other.
 #'
-#' @examples
+#' @examples detect_plastic(10,8,4,0) returns: [1] "PETE"
+
 detect_plastic <- function(C, H, O, Cl) {
 
   # error checking
