@@ -1,6 +1,6 @@
 test_that("detect_plastic_works", {
-  expect_true(detect_plastic(C >= 0))
+  expect_equal(detect_plastic(C = 10, H = 8, O = 4, Cl = 0), "PETE")
 })
 
 
-#test_file("tests/test_detect_plastic.R")
+#testthat::test_file("tests/testthat/test_detect_plastic.R")
