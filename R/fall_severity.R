@@ -8,7 +8,7 @@
 #'
 #' @description Takes inputs fall_length and rope_length to calculate fall factor severity of a climb.
 #'
-#' @examples fall_severity(fall_length = 10, rope_length = 50) returns: [1] "minor"
+#' @examples fall_severity(fall_length = 10, rope_length = 50)
 
 
 
