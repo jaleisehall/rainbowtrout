@@ -13,7 +13,7 @@
 #' @examples slr_fun(sea_level = 1.1, elevation = 4.1)
 #' [1] "The city will be flooded in year 2105"
 
-slr_fun <- function(sea_level, elevation){
+slr_time <- function(sea_level, elevation){
   
   # error checking - is city already below sea level?
   elevation = ifelse(
