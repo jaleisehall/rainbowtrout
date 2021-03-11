@@ -16,25 +16,25 @@ detect_plastic <- function(C, H, O, Cl) {
   # error checking
   C = ifelse(
     C < 0,
-    return("Carbon content must be a value of 0 or greater than 0. Check for NA values"),
+    return("Elements atom content must be a value of 0 or greater than 0. Check for NA, negative, or non-numeric values."),
     C
   )
 
   H = ifelse(
     H < 0,
-    return("Hydrogen content must be a value of 0 or greater than 0. Check for NA values"),
+    return("Elements atom content must be a value of 0 or greater than 0. Check for NA, negative, or non-numeric values."),
     H
   )
 
   O = ifelse(
     O < 0,
-    return("Oxygen content must be a value of 0 or greater than 0. Check for NA values"),
+    return("Elements atom content must be a value of 0 or greater than 0. Check for NA, negative, or non-numeric values."),
     O
   )
 
   Cl = ifelse(
     Cl < 0,
-    return("Chlorine content must be a value of 0 or greater than 0. Check for NA values"),
+    return("Elements atom content must be a value of 0 or greater than 0. Check for NA, negative, or non-numeric values."),
     Cl
   )
 
