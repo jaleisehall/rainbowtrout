@@ -1,6 +1,5 @@
 
-test_that("fish_counts_works", {fish = c("salmon", "tuna", "steelhead"," cod", "shark", "trout", "salmon", "salmon", "salmon", "tuna", "tuna", "steelhead", "cod", "salmon", "salmon", "cod", "salmon", "shark", "shark")
-
+test_that("fish_counts_works", {fish = c("salmon", "tuna", "steelhead","cod", "shark", "trout", "salmon", "salmon", "salmon", "tuna", "tuna", "steelhead", "cod", "salmon", "salmon", "cod", "salmon", "shark", "shark")
   #expect_match(fish_counts(fish = fish, plot = FALSE), c("salmon", "cod", 3, 1, 19))
   #expect_length(fish_counts(fish = fish, plot = TRUE), 9)
   expect_error(fish_counts(fish = fish, plot = YES))
