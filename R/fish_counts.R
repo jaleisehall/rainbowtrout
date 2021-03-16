@@ -5,12 +5,12 @@
 #'
 #' @return most common fish, rarest fish, total number of fish, plot (optional)
 #' @export
-#' @description Returns the most common fish + count, the rarest fish, the total number of fish, and plot if plot = TRUE. 
+#' @description Returns the most common fish + count, the rarest fish, the total number of fish, and plot if plot = TRUE.
 #' Takes vector input of fish species list (or really any list of occurrences)
 #'
 #' @examples > fish_counts(all_fish, plot = FALSE)
-#' salmon   tuna        
-#' 2        5     300 
+#' salmon   tuna
+#' 2        5     300
 
 fish_counts <- function(fish, plot = FALSE){
 
@@ -19,7 +19,7 @@ fish_counts <- function(fish, plot = FALSE){
                 return("plot missing 'TRUE', or 'FALSE' argument"), plot)
 
   # convert input list to factor
-  fish <- as.factor(fish)
+  fish <- factor(fish)
 
   # summarize fish
   fish_summary <- summary(fish)
@@ -33,7 +33,7 @@ fish_counts <- function(fish, plot = FALSE){
   # find total number of fish
   total_fish <- sum(fish_summary)
 
-  print(c(common_fish, rare_fish, total_fish))
+  output <- c(common_fish, rare_fish, total_fish)
 
   # make plot conditionally
   if(plot == TRUE){
@@ -46,6 +46,9 @@ fish_counts <- function(fish, plot = FALSE){
       labs(x = "Fish species", y = "Count")+
       theme(legend.position = "none")
 
-    return(fish_plot)
+    return(fish_plot, output)
   }
+
+  else
+    return(output)
 }
